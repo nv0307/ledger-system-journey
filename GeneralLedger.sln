@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LedgerConsole", "LedgerConsole\LedgerConsole.csproj", "{00EC62DB-4A62-40C7-A57C-8755B6D47D49}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LedgerTests", "LedgerTests\LedgerTests.csproj", "{4A47E7AC-71FC-4CB9-87A1-37F1272635D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{00EC62DB-4A62-40C7-A57C-8755B6D47D49}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00EC62DB-4A62-40C7-A57C-8755B6D47D49}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00EC62DB-4A62-40C7-A57C-8755B6D47D49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A47E7AC-71FC-4CB9-87A1-37F1272635D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A47E7AC-71FC-4CB9-87A1-37F1272635D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A47E7AC-71FC-4CB9-87A1-37F1272635D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A47E7AC-71FC-4CB9-87A1-37F1272635D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
