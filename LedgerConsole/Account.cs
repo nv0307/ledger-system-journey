@@ -2,6 +2,27 @@ using System;
 
 namespace LedgerConsole
 {
+// ============================================================
+// Account.cs — Learning Notes (Abstraction & Polymorphism in C#)
+// ============================================================
+// • ABSTRACT CLASS: Cannot be instantiated directly (no "new Account()").
+//   It only exists to be inherited from — it defines a shared shape,
+//   not a real, standalone object.
+//
+// • PROTECTED SET: Balance can be read by anyone (public get), but
+//   only this class AND its subclasses can change it (protected set).
+//   Stricter than public, looser than private — the right level for
+//   data that subclasses legitimately need to modify.
+//
+// • VIRTUAL METHODS (PostDebit, PostCredit): Provide a DEFAULT
+//   implementation, but explicitly allow subclasses to replace it
+//   with "override". Without "virtual" here, subclasses couldn't
+//   change this behavior at all.
+//
+// • WHY THIS MATTERS: Different account types (asset vs. liability)
+//   need fundamentally different math for the same operation. This
+//   class defines the common contract; subclasses define the specifics.
+// ============================================================
     public abstract class Account
     {
         public string AccountId { get; private set; }
